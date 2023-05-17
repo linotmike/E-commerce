@@ -66,7 +66,9 @@ router.put("/:id", (req, res) => {
 });
 
 
+
 router.delete("/:id", (req, res) => {
+  console.log(req.params.id);
   Category.destroy({
     where: {
       id: req.params.id,
@@ -74,8 +76,9 @@ router.delete("/:id", (req, res) => {
   })
     .then((delCat) => {
       if (!delCat) {
-        res.status(400).json({ msg: "no category with that id" });
+        return res.status(400).json({ msg: "no category with that id" });
       }
+      console.log(delCat);
       res.json(delCat);
     })
     .catch((err) => {
