@@ -1,7 +1,7 @@
 # E-commerce
 
 ![project license](https://img.shields.io/badge/license-MIT-blue.svg)
-# README Generator
+
 ## Description
 welcome to the ecommerce back end where using an api you can manage products,categories and tag. The application uses sequelize and express to route the database to the server and clinet. This app also consists of node.js and mysql. I had to use a many to many relationship between tags and products. This app has a fully functioning CRUD.
     
@@ -46,6 +46,6 @@ Email : linotmike.mk@gmail.com
 
 ## Links
 
-Github repo: https://github.com/linotmike/README-gen
+Github repo: https://github.com/linotmike/E-commerce
 
     
